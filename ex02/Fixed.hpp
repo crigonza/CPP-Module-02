@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 18:21:00 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/20 18:10:21 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/09/20 20:13:07 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,30 @@ class Fixed
         Fixed(const float floatval);
         Fixed(Fixed const &fixed);
         ~Fixed();
-        Fixed &operator=(Fixed const &fixed);
+        
+        Fixed   &operator=(Fixed const &fixed);
+        Fixed   operator+(Fixed const &fixed) const;
+        Fixed   operator-(Fixed const &fixed) const;
+        Fixed   operator*(Fixed const &fixed) const;
+        Fixed   operator/(Fixed const &fixed) const;
+
+        bool    operator>(Fixed const &fixed) const;
+        bool    operator<(Fixed const &fixed) const;
+        bool    operator>=(Fixed const &fixed) const;
+        bool    operator<=(Fixed const &fixed) const;
+        bool    operator==(Fixed const &fixed) const;
+        bool    operator!=(Fixed const &fixed) const;
+
+        Fixed   &operator++(void);
+        Fixed   operator++(int);
+        Fixed   &operator--(void);
+        Fixed   operator--(int);
+
+        static Fixed   &min(Fixed &fixed1, Fixed &fixed2);
+        static Fixed const  &min(Fixed const &fixed1, Fixed const &fixed2);
+        static Fixed   &max(Fixed &fixed1, Fixed &fixed2);
+        static const Fixed   &max(Fixed const &fixed1, Fixed const &fixed2);
+
         int     getRawBits(void) const;
         void    setRawBits(int const raw);
         float   toFloat(void) const;
