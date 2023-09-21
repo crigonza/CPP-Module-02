@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 20:24:45 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/20 20:38:19 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/09/21 10:09:05 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ class Point
         ~Point();
 
         Point &operator=(Point const &point);
+
+        Fixed   get_x(void) const;
+        Fixed   get_y(void) const;
 };
 
 #endif

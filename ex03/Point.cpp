@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 20:26:10 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/20 20:58:58 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/09/21 10:22:19 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,23 @@ Point::Point(const float x, const float y) : _x(Fixed(x)), _y(Fixed(y))
 {
 }
 
-~Point::Point(void)
+Point::~Point(void)
 {
 }
 
 Point   &Point::operator=(Point const &point)
 {
+    (Fixed)this->_x = point.get_x();
+    (Fixed)this->_y = point.get_y();
+    return (*this);
+}
 
+Fixed   Point::get_x(void) const
+{
+    return (this->_x);
+}
+
+Fixed   Point::get_y(void) const
+{
+    return (this->_y);
 }
