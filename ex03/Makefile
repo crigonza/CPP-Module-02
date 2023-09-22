@@ -6,11 +6,11 @@
 #    By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/11 19:07:10 by crigonza          #+#    #+#              #
-#    Updated: 2023/09/20 20:27:21 by crigonza         ###   ########.fr        #
+#    Updated: 2023/09/22 20:29:01 by crigonza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = a.out
+NAME = point
 
 SRC = main.cpp Fixed.cpp Point.cpp bsp.cpp
 OBJ = $(SRC:.cpp=.o)

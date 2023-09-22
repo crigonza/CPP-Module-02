@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 20:24:45 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/21 10:09:05 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/09/22 20:22:50 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,7 @@ class Point
         Fixed   get_x(void) const;
         Fixed   get_y(void) const;
 };
+
+bool    bsp(Point const a, Point const b, Point const c, Point const point);
 
 #endif
