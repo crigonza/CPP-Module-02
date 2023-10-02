@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 18:21:00 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/20 20:13:07 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/10/02 18:39:20 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ class Fixed
         ~Fixed();
         
         Fixed   &operator=(Fixed const &fixed);
+        
         Fixed   operator+(Fixed const &fixed) const;
         Fixed   operator-(Fixed const &fixed) const;
         Fixed   operator*(Fixed const &fixed) const;

@@ -6,7 +6,7 @@
 /*   By: crigonza <crigonza@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 18:21:00 by crigonza          #+#    #+#             */
-/*   Updated: 2023/09/20 18:10:21 by crigonza         ###   ########.fr       */
+/*   Updated: 2023/10/02 18:14:11 by crigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ class Fixed
         Fixed(const float floatval);
         Fixed(Fixed const &fixed);
         ~Fixed();
-        Fixed &operator=(Fixed const &fixed);
+        Fixed   &operator=(Fixed const &fixed);
+        
         int     getRawBits(void) const;
         void    setRawBits(int const raw);
         float   toFloat(void) const;
